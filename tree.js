@@ -12,7 +12,7 @@ class Tree{
         }
         let current = this.root;
         while(true){
-            if(current.value > value){
+            if(value < current.value){
                 // go left
                 if(current.left){
                     current = current.left;
@@ -44,6 +44,11 @@ class Node{
 let tr = new Tree();
 tr.add(40);
 tr.add(30);
+tr.add(20);
+tr.add(35);
 tr.add(50);
+tr.add(45);
 tr.add(60);
 console.log(tr.otObject());
+
+
